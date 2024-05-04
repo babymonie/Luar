@@ -30,7 +30,7 @@ Luar is built on C#, ensuring robust performance and flexibility. However, don't
 
 ## Extendibility with Custom C# Libraries:
 
-Yes, you can extend Luar's functionality with your own C# libraries! We're actively working on a way to allow you to add your own classes and code snippets to Luar, empowering you to tailor the runtime environment to suit your specific needs. Stay tuned for updates on this exciting feature!
+Yes, you can extend Luar's functionality with your own C# libraries! you can add your own classes and code snippets to Luar, empowering you to tailor the runtime environment to suit your specific needs. 
 
 ## Why Luar?
 
@@ -71,6 +71,10 @@ Integrate virtual keyboard and mouse key functionalities directly into your Lua 
 
 ### 7. Requests.lua:
 Easily make HTTP requests to fetch data from the internet using Luar's built-in Requests module. Retrieve web pages, consume APIs, and more with simple and intuitive API calls.
+
+### 8. Custom Extensions: Users can extend Luar's functionality by registering custom classes and functions, providing flexibility to tailor the runtime environment to specific needs.
+### 9. Package Installer/Uninstaller: Luar now supports package installation and uninstallation, simplifying the process of adding external functionality to Lua projects.
+### 9. Socket Support: Addition of socket support enhances Luar's networking capabilities, enabling users to implement various network communication tasks.
 
 Feel free to dive into these examples, experiment with the code, and incorporate them into your projects. If you have any questions or need further assistance, don't hesitate to reach out to the Luar community or refer to our comprehensive documentation. Happy coding! 🚀
 
