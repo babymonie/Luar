@@ -28,10 +28,78 @@ Easily make HTTP requests to fetch data from the internet using Luar's built-in 
 
 Luar is built on C#, ensuring robust performance and flexibility. However, don't fret about platform compatibility! Luar is designed to work seamlessly on Linux, macOS, and Windows environments, providing a consistent experience across different operating systems.
 
-## Extendibility with Custom C# Libraries:
+### Creating a Luar Extension:
 
-Yes, you can extend Luar's functionality with your own C# libraries! you can add your own classes and code snippets to Luar, empowering you to tailor the runtime environment to suit your specific needs. 
+1. **Implement the Interface:**
+   Create a class that implements the `IRuntimeExtension` interface. This interface defines a method named `RegisterClassesAndFunctions`, where you can register your custom classes and functions with the Lua runtime.
 
+   ```csharp
+   using LuaRuntime;
+
+   public class CustomExtension : IRuntimeExtension
+   {
+       public void RegisterClassesAndFunctions(RuntimeManager runtimeManager)
+       {
+           // Register custom classes and functions here
+           runtimeManager.RegisterClass(new CustomClass(), "CustomClass");
+           runtimeManager.RegisterFunction("your function name that lua will call with ", new Action(TheMethodThatYouHave));
+       }
+   }
+   ```
+
+2. **Define Your Custom Class:**
+   Define your custom class with the methods you want to expose to Lua. Make sure your methods are not asynchronous or static.
+
+   ```csharp
+   public class CustomClass
+   {
+       // Your methods
+   }
+   ```
+
+3. **Build Your Extension into a DLL:**
+   Build your project into a DLL. Ensure that it's built with .NET Core and not the Windows-only version.
+
+4. **Usage:**
+   To use your extension in a Luar project, place the DLL in the libs folder where you have Luar installed at. Then, in your Lua script, you can import and use the classes and functions defined in your extension.
+
+#### Installing a Luar Extension:
+1. **Specify Repository:**
+   To install your Luar package, users should use the Luar package manager and specify the repository where your package is hosted. They can do this by running the following command:
+   ```
+   luar install username/repoTitle
+   ```
+   Replace `username/repoTitle` with the GitHub username and repository name where your Luar package is located.
+
+2. **Confirm Installation:**
+   After running the installation command, users should see a confirmation message indicating that your Luar package has been successfully installed. They can then proceed to use it in their Lua projects.
+
+3. **Manual Download (if necessary):**
+   If the package manager encounters any issues or if the dependencies are not included in the installation process, users may need to manually download the DLL and dependencies files from your GitHub repository and include them in their project.
+
+### Providing Your Luar Package:
+
+1. **Create a GitHub Repository:**
+   Start by creating a GitHub repository for your Luar package. Make sure the repository name matches the name of your Luar package.
+
+2. **Upload Dependencies and DLL:**
+   Upload the dependencies file (deps) and the DLL file of your Luar extension to the main folder of the repository. Ensure that there is only one DLL file, and it's the main DLL required for your extension.
+
+3. **Write Documentation:**
+   Include clear and concise documentation in your repository's README file. Provide instructions on how users can install and use your Luar package, including any dependencies they need to be aware of.
+
+### Making Your Package Installable:
+
+1. **Inform Users:**
+   In your documentation, inform users that they can install your Luar package using the Luar package manager. Explain the steps they need to follow to install it from your GitHub repository.
+
+2. **Provide Repository Link:**
+   Share the link to your GitHub repository with users who want to install your Luar package. They'll need this link to specify the repository when installing the package.
+
+3. **Manual Download:**
+   Since Luar's package manager is not as robust as others, users may need to manually download the DLL and dependencies files from your repository if they're not included in the installation process.
+
+With these steps, you can create custom extensions for Luar, package them into DLLs, and easily install or uninstall them in your Luar projects.
 ## Why Luar?
 
 Luar aims to make Lua a compelling alternative to Node.js by providing a streamlined runtime environment with a focus on simplicity and ease of use. Whether you're a seasoned Lua developer or just starting out, Luar empowers you to build powerful applications with confidence.
