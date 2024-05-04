@@ -21,6 +21,8 @@ Convert between different data types and formats effortlessly with Luar's versat
 
 ### 6. Virtual Keyboard and Mouse Key (DirectX Compatible):
 Integrate virtual keyboard and mouse key functionalities directly into your Lua applications, providing compatibility with DirectX for enhanced gaming experiences and beyond.
+### 7. Requests:
+Easily make HTTP requests to fetch data from the internet using Luar's built-in Requests module. Retrieve web pages, consume APIs, and more with simple and intuitive API calls.
 
 ## Built on C#, Compatible Everywhere:
 
@@ -66,5 +68,8 @@ This example demonstrates how to convert between different data types and format
 
 ### 6. DirectXIntegrationExample.lua:
 Integrate virtual keyboard and mouse key functionalities directly into your Lua applications with this example. Learn how Luar provides compatibility with DirectX for enhanced gaming experiences and beyond.
+
+### 7. Requests.lua:
+Easily make HTTP requests to fetch data from the internet using Luar's built-in Requests module. Retrieve web pages, consume APIs, and more with simple and intuitive API calls.
 
 Feel free to dive into these examples, experiment with the code, and incorporate them into your projects. If you have any questions or need further assistance, don't hesitate to reach out to the Luar community or refer to our comprehensive documentation. Happy coding! 🚀
