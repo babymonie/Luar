@@ -18,8 +18,18 @@ Effortlessly work with JSON data using Luar's dedicated JSON class, simplifying 
 
 ### 5. Convert Class:
 Convert between different data types and formats effortlessly with Luar's versatile Convert class.
+
 ### 6. Virtual Keyboard and Mouse Key (DirectX Compatible):
 Integrate virtual keyboard and mouse key functionalities directly into your Lua applications, providing compatibility with DirectX for enhanced gaming experiences and beyond.
+
+## Built on C#, Compatible Everywhere:
+
+Luar is built on C#, ensuring robust performance and flexibility. However, don't fret about platform compatibility! Luar is designed to work seamlessly on Linux, macOS, and Windows environments, providing a consistent experience across different operating systems.
+
+## Extendibility with Custom C# Libraries:
+
+Yes, you can extend Luar's functionality with your own C# libraries! We're actively working on a way to allow you to add your own classes and code snippets to Luar, empowering you to tailor the runtime environment to suit your specific needs. Stay tuned for updates on this exciting feature!
+
 ## Why Luar?
 
 Luar aims to make Lua a compelling alternative to Node.js by providing a streamlined runtime environment with a focus on simplicity and ease of use. Whether you're a seasoned Lua developer or just starting out, Luar empowers you to build powerful applications with confidence.
