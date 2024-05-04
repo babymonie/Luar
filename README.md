@@ -44,3 +44,27 @@ Luar is an open-source project, and we welcome contributions from the community.
 ## Let's Build Something Amazing:
 
 With Luar, the possibilities are endless. Join us in unlocking the full potential of Lua and revolutionizing the way you build applications. Happy coding! 🚀
+
+# Check Out Example Lua Files:
+
+To help you get started with Luar, we've provided several example Lua files showcasing its key features and functionalities. These examples cover various use cases, from basic filesystem operations to setting up HTTP servers and working with JSON data. Feel free to explore these examples to gain a better understanding of how Luar can streamline your development process.
+
+### 1. FileSystemExample.lua:
+This example demonstrates how to perform common filesystem operations using Luar's built-in filesystem access functions. Learn how to create, read, write, and delete files and directories effortlessly.
+
+### 2. server.lua:
+In this example, you'll discover how easy it is to set up an HTTP server for your web applications or APIs using Luar's intuitive APIs. Dive into the code to see how to handle HTTP requests and responses efficiently.
+
+### 3. ProcessInteractionExample.lua:
+Explore this example to learn how to access and manipulate the current process environment using Luar. Discover how to seamlessly integrate with other system components for enhanced functionality.
+
+### 4. JsonExample.lua:
+Work with JSON data effortlessly by exploring this example. Learn how to use Luar's dedicated JSON class to simplify data exchange and manipulation tasks.
+
+### 5. ConvertExample.lua:
+This example demonstrates how to convert between different data types and formats seamlessly using Luar's versatile Convert class. Explore the code to see how easy it is to perform data conversions in your Lua applications.
+
+### 6. DirectXIntegrationExample.lua:
+Integrate virtual keyboard and mouse key functionalities directly into your Lua applications with this example. Learn how Luar provides compatibility with DirectX for enhanced gaming experiences and beyond.
+
+Feel free to dive into these examples, experiment with the code, and incorporate them into your projects. If you have any questions or need further assistance, don't hesitate to reach out to the Luar community or refer to our comprehensive documentation. Happy coding! 🚀
